@@ -92,12 +92,12 @@ const {
   cta = { label: 'Start a project', href: '/contact' },
   actions = [],
   showThemeToggle = true,
-  showThemeSelector = true,
+  showThemeSelector = false,
   showMobileMenu = true,
   showSocialLinks = false,
   showLanguageSwitcher = i18nIsEnabled(),
   showActiveState = true,
-  showScrollProgress = false,
+  showScrollProgress = true,
   scrollProgressPosition = 'bottom',
   autoHide = true,
   invertOnReturn = true,
@@ -200,7 +200,7 @@ const buttonId = `${menuId}-button`;
             <Logo size={size === 'sm' ? 'md' : 'lg'} forceDark={isInvert} class="bg-brand-600" />
             <span
               class={cn(
-                'font-display text-xl font-bold tracking-tight',
+                'font-display text-lg font-bold tracking-tight',
                 isFloating ? 'hdr-logo-text' : (isInvert ? 'text-brand-600 dark:text-foreground lg:text-on-invert' : 'text-brand-600 dark:text-foreground')
               )}
             >

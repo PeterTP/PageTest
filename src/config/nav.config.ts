@@ -26,18 +26,18 @@ export interface LegalLink {
 }
 
 export const navItems: NavItem[] = [
-  { label: 'Services', href: '/services', order: 1 },
-  { label: 'Projects', href: '/projects', order: 2 },
-  { label: 'Blog', href: '/blog', order: 3 },
-  { label: 'About', href: '/about', order: 4 },
+  { label: 'Focus', href: '/services', order: 1 },
+  { label: 'Publications', href: '/projects', order: 2 },
+  { label: 'News', href: '/blog', order: 3 },
+  { label: 'Team', href: '/about', order: 4 },
   { label: 'Contact', href: '/contact', order: 5 },
 ];
 
 export const footerNavItems: NavItem[] = [
-  { label: 'Services', href: '/services', order: 1 },
-  { label: 'Projects', href: '/projects', order: 2 },
-  { label: 'Blog', href: '/blog', order: 3 },
-  { label: 'About', href: '/about', order: 4 },
+  { label: 'Focus', href: '/services', order: 1 },
+  { label: 'Publications', href: '/projects', order: 2 },
+  { label: 'News', href: '/blog', order: 3 },
+  { label: 'Team', href: '/about', order: 4 },
   { label: 'Contact', href: '/contact', order: 5 },
 ];
 

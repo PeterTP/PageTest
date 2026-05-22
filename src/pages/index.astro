@@ -26,23 +26,22 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
 ---
 
 <LandingLayout
-  title="Astro Rocket — Astro 6 starter theme"
-  description="A production-ready Astro 6 starter with 12 beautiful themes, 57+ components, built-in i18n, dark mode and a fast, modern foundation to build anything on."
+  title="Neuromorphic Research Nexus"
+  description="Neuromorphic Research Nexus - Research group focusing on neuromorphic computing from circuitry to software"
   image="/og-default.svg"
   includePersonSchema={true}
   includeProfessionalServiceSchema={true}
 >
   <!-- Hero -->
   <Hero layout="centered" size="xl" class="hero-dark-gradient" showScrollIndicator>
-    <Badge slot="badge" variant="brand" pill pulse class="dark:text-brand-200">Available for new projects</Badge>
+    <Badge slot="badge" variant="brand" pill pulse class="dark:text-brand-200">Neuromorphic Computing</Badge>
 
     <h1 slot="title" class="!text-[clamp(2rem,11.2vw,3rem)] sm:!text-5xl md:!text-6xl lg:!text-7xl">
-      <span class="text-brand-600 dark:text-foreground [-webkit-text-fill-color:currentColor] whitespace-nowrap">Astro Rocket —</span><br />
-      <span class="text-brand-600 dark:text-foreground [-webkit-text-fill-color:currentColor]">Web Designer</span><br class="md:hidden" /><span class="text-brand-600 dark:text-foreground [-webkit-text-fill-color:currentColor]"> &amp; Developer</span>
+      <span class="text-brand-600 dark:text-foreground [-webkit-text-fill-color:currentColor] whitespace-nowrap">Neuromorphic Research Nexus</span><br />
     </h1>
 
     <p slot="description">
-      Astro 6 starter with 12 beautiful themes, 57+ components, dark mode and a fast, modern foundation to build anything on.
+      Innovating at every level, from circuitry to software
     </p>
 
    <Fragment slot="actions">
@@ -58,32 +57,32 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
     </Fragment>
   </Hero>
 
-  <!-- Services Section -->
+  <!-- Focus Section -->
   <section class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <div class="mx-auto max-w-6xl px-6 flex flex-col gap-8">
       <div class="flex flex-col items-center gap-4 text-center" data-reveal>
         <div class="flex flex-col items-center gap-6">
-          <Badge variant="brand" pill>Services</Badge>
+          <Badge variant="brand" pill>Focus</Badge>
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
-            What I do
+            Our Focus
           </h2>
         </div>
         <p class="text-lg text-foreground-muted max-w-2xl mx-auto">
-          From concept to launch.
+          Pushing the boundaries of neuromorphic computing.
         </p>
       </div>
 
       <div class="grid gap-6 lg:grid-cols-3">
-        <!-- Web Design -->
+        <!-- Analog Circuits -->
         <Card hover href="/services" class="group flex flex-col" data-reveal>
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
-              <Icon name="layout" size="sm" />
+              <Icon name="cpu" size="sm" />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base font-semibold text-foreground">Web Design</h3>
+              <h3 class="text-base font-semibold text-foreground">Analog Circuits</h3>
               <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
-                Thoughtful layouts that put your content first. Designed for clarity, balance, and the way people actually read on the web.
+                Harnessing physical dynamics for high-speed, ultra-low power inference. We focus on memristive crossbar arrays to perform compute-in-memory, bypassing the von Neumann bottleneck.
               </p>
               <span class="inline-flex items-center gap-1 text-sm font-medium text-brand-500 mt-3 group-hover:gap-2 transition-all">
                 Learn more
@@ -93,16 +92,16 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
           </div>
         </Card>
 
-        <!-- Web Development -->
+        <!-- Brain-inspired Software -->
         <Card hover href="/services" class="group flex flex-col" data-reveal data-reveal-delay="1">
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
-              <Icon name="code" size="sm" />
+              <Icon name="brain-circuit" size="sm" />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base font-semibold text-foreground">Web Development</h3>
+              <h3 class="text-base font-semibold text-foreground">Brain-inspired Software</h3>
               <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
-                Modern sites built with Astro and Tailwind. Lean, accessible, and ready to scale with your business — no template lock-in.
+                Developing algorithms that bypass traditional backpropagation. Our models leverage local learning rules and spike-timing-dependent plasticity (STDP) to enable efficient on-chip adaptation.
               </p>
               <span class="inline-flex items-center gap-1 text-sm font-medium text-brand-500 mt-3 group-hover:gap-2 transition-all">
                 Learn more
@@ -112,16 +111,16 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
           </div>
         </Card>
 
-        <!-- SEO & Performance -->
+        <!-- Evolutionary Learning -->
         <Card hover href="/services" class="group flex flex-col" data-reveal data-reveal-delay="2">
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
-              <Icon name="zap" size="sm" />
+              <Icon name="dna" size="sm" />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base font-semibold text-foreground">SEO & Performance</h3>
+              <h3 class="text-base font-semibold text-foreground">Evolutionary Learning</h3>
               <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
-                Pages that load instantly and rank well from launch. Core Web Vitals, metadata, and structured data, done properly.
+                Moving beyond gradient descent. We utilize evolutionary strategies and genetic algorithms to optimize non-differentiable hardware parameters, enabling neural systems to self-organize and adapt in volatile environments.
               </p>
               <span class="inline-flex items-center gap-1 text-sm font-medium text-brand-500 mt-3 group-hover:gap-2 transition-all">
                 Learn more
@@ -141,7 +140,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
         <div class="flex flex-col items-center gap-6">
           <Badge variant="brand" pill>Selected work</Badge>
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
-            Projects I've built
+            Our projects
           </h2>
         </div>
         <p class="text-lg text-foreground-muted max-w-2xl mx-auto">
