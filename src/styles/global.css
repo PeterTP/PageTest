@@ -325,13 +325,23 @@
 
   /* Hero gradient — dark mode */
   .dark .hero-dark-gradient {
-    background: linear-gradient(to bottom, var(--color-brand-500) 0%, #000 100%);
+    background: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%),
+      url('/background.jpg');
+    background-size: cover; 
+    background-position: center center;
+    /* background: linear-gradient(to bottom, var(--color-brand-500) 0%, #000 100%); */
   }
 
   .hero-dark-gradient {
     position: relative;
     isolation: isolate;
-    background: linear-gradient(to bottom, var(--color-brand-500) 0%, #000 100%);
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 100%),
+      url('/background.jpg');
+    background-size: cover; 
+    background-position: center center;
+    /* background: linear-gradient(to bottom, var(--color-brand-500) 0%, #000 100%); */
   }
   html:not(.dark) .hero-dark-gradient {
     --color-foreground:           oklch(91% 0.008 250);

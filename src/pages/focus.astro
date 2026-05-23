@@ -9,6 +9,7 @@ import Badge from '@/components/ui/data-display/Badge/Badge.astro';
 import Card from '@/components/ui/data-display/Card/Card.astro';
 import Button from '@/components/ui/form/Button/Button.astro';
 import { Hero } from '@/components/hero';
+import TypingEffect from '@/components/ui/TypingEffect.astro';
 import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
 ---
 <PageLayout
@@ -18,44 +19,45 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
   <Hero layout="centered" size="sm">
     <Badge slot="badge" variant="brand" pill>
       <Icon name="sparkles" size="sm" />
-      Services
+      Focus
     </Badge>
     <h1 slot="title">
-      <span class="text-foreground">What I offer —</span><br />
-      <span class="text-brand-500">designed, built, and tuned.</span>
+      <span class="text-foreground">We focus on</span><br />
+      <span class="text-brand-500 [-webkit-text-fill-color:var(--color-brand-500)]">
+        <TypingEffect words={["Analog Circuits", "Brain-inspired Software", "Evolutionary Learning"]} />
+      </span>
     </h1>
 
     <p slot="description">
-      Three core services, one consistent standard. From the first
-      wireframe to the final Lighthouse score, every project gets the
-      same attention to detail.
+      Pioneering a holistic approach to neuromorphic intelligence,
+      from memristive circuit design and spiking neural algorithms to evolutionary system adaptation.
     </p>
 
     <Fragment slot="actions">
-      <Button variant="outline" href="#design">
-        Web Design
+      <Button variant="outline" href="#circuit">
+        Analog Circuits
         <Icon name="arrow-down" size="sm" />
       </Button>
-      <Button variant="outline" href="#development">
-        Development
+      <Button variant="outline" href="#software">
+        Brain-inspired Software
         <Icon name="arrow-down" size="sm" />
       </Button>
-      <Button variant="outline" href="#performance">
-        SEO & Performance
+      <Button variant="outline" href="#evolution">
+        Evolutionary Learning
         <Icon name="arrow-down" size="sm" />
       </Button>
     </Fragment>
   </Hero>
 
   <!-- Design -->
-  <section id="design" class="py-[var(--space-section-md)] bg-background-secondary border-t border-border">
+  <section id="circuit" class="py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid gap-12 lg:grid-cols-2">
         <!-- Text -->
         <div class="flex flex-col justify-center gap-4" data-reveal="right" data-reveal-ease="smooth">
           <Badge variant="brand" pill class="self-start">
-            <Icon name="layout" size="sm" />
-            Web Design
+            <Icon name="cpu" size="sm" />
+            Circuit
           </Badge>
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
             Design with intention
@@ -125,14 +127,14 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
   </section>
 
   <!-- Development -->
-  <section id="development" class="py-[var(--space-section-md)] bg-background border-t border-border">
+  <section id="software" class="py-[var(--space-section-md)] bg-background border-t border-border">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid gap-12 lg:grid-cols-2">
         <!-- Text -->
         <div class="flex flex-col justify-center gap-4 lg:order-2" data-reveal="left" data-reveal-ease="smooth">
           <Badge variant="brand" pill class="self-start">
-            <Icon name="code" size="sm" />
-            Web Development
+            <Icon name="brain-circuit" size="sm" />
+            Software
           </Badge>
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
             Code that earns its place
@@ -202,14 +204,14 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
   </section>
 
   <!-- Performance -->
-  <section id="performance" class="py-[var(--space-section-md)] bg-background-secondary border-t border-border">
+  <section id="evolution" class="py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid gap-12 lg:grid-cols-2">
         <!-- Text -->
         <div class="flex flex-col justify-center gap-4" data-reveal="right" data-reveal-ease="smooth">
           <Badge variant="brand" pill class="self-start">
-            <Icon name="zap" size="sm" />
-            Performance
+            <Icon name="dna" size="sm" />
+            Evolution
           </Badge>
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
             Fast pages, found pages
@@ -353,6 +355,7 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
   <!-- CTA -->
   <section class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <!-- Mobile: flat section, no card -->
+    <!--
     <div class="glitch:hidden mx-auto max-w-2xl px-6 text-center" data-reveal>
       <Badge variant="brand" pill class="mb-6">Let's talk</Badge>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
@@ -372,8 +375,10 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
         </Button>
       </div>
     </div>
+    -->
 
     <!-- Desktop: contained LetterGlitch band with glass card -->
+    <!--
     <LetterGlitchBand>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
         Have a project in mind?
@@ -392,6 +397,7 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
         </Button>
       </div>
     </LetterGlitchBand>
+    -->
   </section>
 </PageLayout>
 
