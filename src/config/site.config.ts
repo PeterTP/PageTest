@@ -122,28 +122,28 @@ export interface SiteConfig {
 const siteConfig: SiteConfig = {
   name: 'Neuromorphic Research Nexus',
   description:
-    'Neuromorphic Research Nexus — A production-ready Astro 6 starter with 12 beautiful themes, 57+ components, built-in i18n, dark mode and a fast, modern foundation to build anything on.',
-  url: SITE_URL || 'https://astrorocket.dev',
+    'Neuromorphic Research Nexus — Research group focusing on neuromorphic computing from circuitry to software.',
+  url: SITE_URL || 'https://nrn.pages.dev',
   ogImage: '/og-default.svg',
-  author: 'Hans Martens',
-  email: 'hello@hansmartens.dev',
+  author: 'Xinming Shi',
+  email: 'x.shi@qub.ac.uk',
   address: {
     street: '',
-    city: 'Eindhoven',
+    city: 'Belfast',
     state: '',
     zip: '',
-    country: 'the Netherlands',
+    country: 'UK',
   },
   socialLinks: [
-    'https://github.com/hansmartensdev',
-    'https://x.com/hansmartens_dev',
-    'https://www.linkedin.com',
-    'https://bsky.app/profile/hansmartensdev.bsky.social',
+    'https://github.com/PeterTP',
+    // 'https://x.com/hansmartens_dev',
+    // 'https://www.linkedin.com',
+    // 'https://bsky.app/profile/hansmartensdev.bsky.social',
   ],
-  twitter: {
-    site: 'https://x.com/hansmartens_dev',
-    creator: '@hansmartens_dev',
-  },
+  // twitter: {
+  //   site: 'https://x.com/hansmartens_dev',
+  //   creator: '@hansmartens_dev',
+  // },
   verification: {
     google: GOOGLE_SITE_VERIFICATION,
     bing: BING_SITE_VERIFICATION,

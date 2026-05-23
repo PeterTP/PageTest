@@ -26,15 +26,15 @@ export interface LegalLink {
 }
 
 export const navItems: NavItem[] = [
-  { label: 'Focus', href: '/services', order: 1 },
+  { label: 'Focus', href: '/focus', order: 1 },
   { label: 'Publications', href: '/projects', order: 2 },
   { label: 'News', href: '/blog', order: 3 },
-  { label: 'Team', href: '/about', order: 4 },
+  { label: 'Team', href: '/team', order: 4 },
   { label: 'Contact', href: '/contact', order: 5 },
 ];
 
 export const footerNavItems: NavItem[] = [
-  { label: 'Focus', href: '/services', order: 1 },
+  { label: 'Focus', href: '/focus', order: 1 },
   { label: 'Publications', href: '/projects', order: 2 },
   { label: 'News', href: '/blog', order: 3 },
   { label: 'Team', href: '/about', order: 4 },

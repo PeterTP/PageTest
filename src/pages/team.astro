@@ -15,24 +15,20 @@ import LetterGlitchBand from '@/components/patterns/LetterGlitchBand.astro';
 import BlogImageSVG from '@/components/blog/BlogImageSVG.astro';
 ---
 <PageLayout
-  title="About Astro Rocket — Web Designer & Developer | Eindhoven"
-  description="Designer & developer — Crafting modern web experiences shaped by clean design, solid structure, and attention to detail."
+  title="Team"
+  description="Meet the team pursuing the future of artifical intelligence"
 >
   <Hero layout="centered" size="sm">
     <Badge slot="badge" variant="brand" pill>
       <Icon name="user" size="sm" />
-      About me
+      Team
     </Badge>
     <h1 slot="title">
-      <span class="text-foreground [-webkit-text-fill-color:currentColor]">Astro Rocket —</span><br />
-      <span class="text-brand-500 [-webkit-text-fill-color:var(--color-brand-500)]">
-        <TypingEffect words={["Web Designer", "Web Developer", "Astro Developer", "Claude Code User", "UI / UX Enthusiast", "Blogger", "Coffee lover"]} />
-      </span>
+      <span class="text-foreground [-webkit-text-fill-color:currentColor]">Meet the <span class="text-brand-500">Team</span></span><br />
     </h1>
 
     <p slot="description">
-      I care about both sides of the craft — how a site looks and how it
-      performs. Here's a bit more about how I think and work.
+      We are a team of passionate researchers and developers dedicated to pushing the boundaries of artificial intelligence.
     </p>
   </Hero>
 
@@ -337,8 +333,10 @@ import BlogImageSVG from '@/components/blog/BlogImageSVG.astro';
   </section>
 
   <!-- CTA -->
+ 
   <section class="relative z-10 py-[var(--space-section-md)] bg-background border-t border-border">
     <!-- Mobile: flat section, no card -->
+    <!--
     <div class="glitch:hidden mx-auto max-w-2xl px-6 text-center" data-reveal>
       <Badge variant="brand" pill class="mb-6">Let's talk</Badge>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
@@ -352,8 +350,10 @@ import BlogImageSVG from '@/components/blog/BlogImageSVG.astro';
         <Icon name="arrow-right" size="sm" />
       </Button>
     </div>
+    -->
 
     <!-- Desktop: contained LetterGlitch band with glass card -->
+    <!--
     <LetterGlitchBand>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
         Sound like a good fit?
@@ -366,6 +366,7 @@ import BlogImageSVG from '@/components/blog/BlogImageSVG.astro';
         <Icon name="arrow-right" size="sm" />
       </Button>
     </LetterGlitchBand>
+    -->
   </section>
 </PageLayout>
 
