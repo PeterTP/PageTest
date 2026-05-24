@@ -17,20 +17,20 @@ const projects = items.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <PageLayout
-  title="Projects — Astro Rocket"
-  description="Selected work — websites, tools, and open-source projects built by Astro Rocket."
+  title="Publications"
+  description="Selected work of our significant projects"
   eagerReveal
 >
   <Hero layout="centered" size="sm">
     <Badge slot="badge" variant="brand" pill>
       <Icon name="layers" size="sm" />
-      Selected work
+      Publications
     </Badge>
 
-    <h1 slot="title">Projects</h1>
+    <h1 slot="title">Scientific Contributions</h1>
 
     <p slot="description">
-      Work I'm most proud of.
+      Our contributions are a reflection of our commitment to the scientific community. Check out our selected work below.
     </p>
   </Hero>
 
@@ -81,6 +81,7 @@ const projects = items.sort((a, b) => a.data.order - b.data.order);
  <!-- CTA -->
   <section class="relative z-10 py-[var(--space-section-md)] bg-background">
     <!-- Mobile: flat section, no card -->
+    <!--
     <div class="glitch:hidden mx-auto max-w-2xl px-6 text-center" data-reveal>
       <Badge variant="brand" pill class="mb-6">Let's talk</Badge>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
@@ -100,8 +101,10 @@ const projects = items.sort((a, b) => a.data.order - b.data.order);
         </Button>
       </div>
     </div>
+    -->
 
     <!-- Desktop: contained LetterGlitch band with glass card -->
+    <!--
     <LetterGlitchBand>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
         Want something like this?
@@ -120,5 +123,6 @@ const projects = items.sort((a, b) => a.data.order - b.data.order);
         </Button>
       </div>
     </LetterGlitchBand>
+    -->
   </section>
 </PageLayout>

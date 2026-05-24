@@ -37,16 +37,16 @@ const regularPosts = regularPostsAll.slice(0, BLOG_POSTS_PER_PAGE);
 const topTags = collectTopTags(posts, TAG_CLOUD_LIMIT);
 ---
 
-<PageLayout title="Blog — Astro Rocket" description="Articles on web design, development, and the web by Astro Rocket." showScrollProgress eagerReveal>
+<PageLayout title="News" description="Articles on neuromorphic computing" showScrollProgress eagerReveal>
   <Hero layout="centered" size="sm">
     <Badge slot="badge" variant="brand" pill>
       <Icon name="book" size="sm" />
-      All posts
+      News
     </Badge>
 
-    <h1 slot="title">Blog</h1>
+    <h1 slot="title">News</h1>
 
-    <p slot="description">Articles on Astro, web performance, design systems, and building with Astro Rocket.</p>
+    <p slot="description">Articles of the most recent news on neuromorphic computing.</p>
   </Hero>
 
   <!-- Featured Posts Section -->
@@ -128,6 +128,7 @@ const topTags = collectTopTags(posts, TAG_CLOUD_LIMIT);
 
   <!-- Follow CTA Section -->
   <!-- Mobile: standard CTA, no LetterGlitch -->
+  <!--
   <CTA variant="default" size="md" maxWidth="lg" glow={false} data-reveal class:list={['glitch:hidden', featuredPosts.length > 0 && '!bg-background-secondary']}>
     <h2 slot="heading" class="!text-4xl">Follow along</h2>
     <p slot="description" class="!text-lg text-balance">Stay in the loop — new articles, thoughts, and updates.</p>
@@ -160,8 +161,10 @@ const topTags = collectTopTags(posts, TAG_CLOUD_LIMIT);
       </a>
     </div>
   </CTA>
+  -->
 
   <!-- Desktop: contained LetterGlitch band with glass card -->
+  <!--
   <section class:list={['hidden glitch:block relative z-10 py-[var(--space-section-md)]', featuredPosts.length > 0 ? 'bg-background-secondary' : 'bg-background']}>
     <LetterGlitchBand>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">Follow along</h2>
@@ -196,4 +199,5 @@ const topTags = collectTopTags(posts, TAG_CLOUD_LIMIT);
       </div>
     </LetterGlitchBand>
   </section>
+  -->
 </PageLayout>
