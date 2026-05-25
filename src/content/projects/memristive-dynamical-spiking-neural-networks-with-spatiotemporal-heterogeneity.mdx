@@ -1,0 +1,38 @@
+---
+title: "Memristive dynamical spiking neural networks with spatiotemporal heterogeneity"
+description: "A fully memristive spiking neural network with spatiotemporal heterogeneity: each neuron has a distinct, input-adaptive time constant, enabling end-to-end BPTT training without ADCs or comparators, and providing strong robustness to RRAM stuck-at faults."
+url: "https://raw.githubusercontent.com/embeddedsky/xinmingshi.github.io/master/files/paper13.pdf"
+repo: "https://raw.githubusercontent.com"
+tags: ["Spiking Neural Networks", "Memristive Systems", "Spatiotemporal Dynamics"]
+featured: true
+order: 0
+year: 2025
+role: "MSNN"
+services: ["Spiking Neural Networks", "Memristive Systems", "Spatiotemporal Dynamics"]
+meta: ["Spiking Neural Networks", "Memristive Systems", "Spatiotemporal Dynamics"]
+image: "../../assets/projects/MSNN.png"
+gallery:
+  - src: "../../assets/projects/MSNN.png"
+    alt: "MSNN"
+---
+
+import LighthouseScoresGrid from '@/components/landing/LighthouseScoresGrid.astro';
+import Callout from '@/components/patterns/Callout.astro';
+
+## Publication
+
+Published in 2025 International Conference on Machine Intelligence and Nature-InspireD Computing (MIND), 2025
+
+## Recommended citation
+
+Xinming Shi and Peng Zhou, Connlaoth McTaggart, Xin Yao "Memristive dynamical spiking neural networks with spatiotemporal heterogeneity," 2025 International Conference on Machine Intelligence and Nature-InspireD Computing (MIND), Xiamen, China, 2025.
+
+## Abstract
+
+We propose a fully memristive spiking neural network (MSNN) that incorporates spatiotemporal heterogeneity to improve temporal representation and fault tolerance. 
+In our proposed work, each neuron possesses a distinct time constant (spatial heterogeneity) that evolves over time in response to input stimuli (temporal heterogeneity), 
+enabling diverse, adaptive, and temporally rich responses. Both synaptic and neuronal behaviors are modeled using SPICE-level analog memristors, 
+and the network is trained end-to-end using backpropagation through time (BPTT) in a differentiable framework. 
+This approach eliminates the need for digital interfacing circuits such as ADCs or explicit comparators, supporting compact and efficient hardware deployment. 
+Evaluations on the MNIST and DVS128 Gesture datasets show competitive accuracy and significantly improved robustness to hardware faults, such as stuck-at errors in RRAM cells. 
+These results demonstrate the effectiveness of spatiotemporally heterogeneous MSNNs for scalable, reliable neuromorphic computing.
